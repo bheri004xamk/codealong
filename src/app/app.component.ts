@@ -1,4 +1,6 @@
+import { TehtavalistaService } from './tehtavalista.service';
 import { Component } from '@angular/core';
+import { Tehtava } from './tehtava';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +10,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
+  constructor(protected tehtavalista : TehtavalistaService) {
+
+  }
   
+
+
 }
