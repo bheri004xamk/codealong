@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Xamk-imgur</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-light bg-light mb-3">
+        <a class="navbar-brand" href="/">
+        <img src="img/xamk.png" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <a href="lisaa.html" class="btn btn-success">Lisää uusi kuva</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="jumbotron">
+
+        <h2 class="mb-4">Lisää uusi kuva</h2>
+
+        <form method="POST" action="/lisaakuva" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="otsikko">Otsikko:</label>
+                <input class="form-control" type="text" name="otsikko" id="otsikko">
+                <label for="tiedosto">Kuvatiedosto:</label>
+                <input class="form-control-file" type="file" name="tiedosto" id="tiedosto">
+            </div>
+
+            <input type="submit" class="btn btn-primary" name="laheta" value="Lähetä tiedot palvelimelle">
+            <a href="/" class="btn btn-secondary">Peruuta</a>
+
+        </form>    
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

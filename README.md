@@ -1,2 +1,2 @@
 # codealong
-Codealong-startterikoodit (Sovellusohjelmointi 3)
+Yhteiskoodauksen startterikoodit (Sovellusohjelmointi 2)
