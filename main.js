@@ -11,7 +11,7 @@ const upload = multer({ dest : "./public/uploads/" });
 
 const fs = require("fs");
 
-const portti = 3201;
+const portti = process.env.port || 3201;
 const tiedostonimi = "./kuvat.json"; 
 
 app.use(express.static("./public/"));
