@@ -211,9 +211,9 @@ app.get("/", (req, res) => {
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                <link rel="stylesheet" href="css/bootstrap.min.css">
+                <link rel="stylesheet" href="/css/bootstrap.min.css">
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-                <link rel="stylesheet" href="css/style.css">
+                <link rel="stylesheet" href="/css/style.css">
                 <title>Xamk-imgur</title>
             </head>
             <body>
@@ -222,7 +222,7 @@ app.get("/", (req, res) => {
                     <a class="navbar-brand" href="/">
                     <img src="/img/xamk.png" height="40" class="d-inline-block align-top" alt="">
                     </a>
-                    <a href="lisaa.html" class="btn btn-success">Lisää uusi kuva</a>
+                    <a href="/lisaa.html" class="btn btn-success">Lisää uusi kuva</a>
                 </nav>
 
                 <div class="row">
