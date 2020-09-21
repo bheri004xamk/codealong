@@ -129,7 +129,7 @@ app.get("/kuva/", (req, res) => {
                     <div class="card">
                         <div class="card-header">
                         <h3>${kuvat[indeksi].otsikko}</h3>
-                        <img class="card-img-top" src="/img/uploads/${kuvat[indeksi].tiedosto}" alt="${kuvat[indeksi].otsikko}">
+                        <img class="card-img-top" src="/uploads/${kuvat[indeksi].tiedosto}" alt="${kuvat[indeksi].otsikko}">
                         </div>
                         <div class="card-footer">
                         Katseluita: ${kuvat[indeksi].katselut}
@@ -178,7 +178,7 @@ app.get("/", (req, res) => {
                                 <div class="col-md-2">
                                     <div class="card">
                                         <a href="/kuva/?id=${kuva.aikaleima}">
-                                        <img class="card-img-top" src="/img/uploads/${kuva.tiedosto}" alt="${kuva.otsikko}">
+                                        <img class="card-img-top" src="/uploads/${kuva.tiedosto}" alt="${kuva.otsikko}">
                                         </a>
                                         <div class="card-body">
                                             <p class="card-text">${kuva.otsikko}</p>
