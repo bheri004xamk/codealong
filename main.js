@@ -24,9 +24,13 @@ app.post("/lisaakuva/", upload.single("tiedosto"), (req, res) => {
 
         let kuvat = JSON.parse(data);
 
+        let tallennettuTiedosto = `${req.file.filename}.${req.file.originalname.split(".")[1]}`;
+
+        fs.renameSync(`./public/uploads/${req.file.filename}` , `./public/uploads/${tallennettuTiedosto}`);
+
         let uusikuva = { 
                         "otsikko" : req.body.otsikko,
-                        "tiedosto" : req.file.filename,
+                        "tiedosto" : tallennettuTiedosto,
                         "aikaleima" : new Date().getTime() 
                         };
 
